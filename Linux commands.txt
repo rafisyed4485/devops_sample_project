@@ -1,0 +1,29 @@
+$ pwd						-> It will show current working directory(/c/Users/RAFI/Desktop/Devops)
+$ git init					-> Initialized empty Git repository in C:/Users/RAFI/Desktop/Devops/.git/
+ll						-> Show List
+touch Filename.extension			-> to create a File
+cat> FileName.extension 			-> to write code in the file
+$ cat Demo.java					-> To read data in the file
+$ git status					-> to check the uncomitted file in local repository
+$ git Add Filename.extension			-> Select a file to push into central repository
+$ git commit -m "Message"			-> To commit the file
+git remote add origin (path)			-> branch or origin selection (EX: $ git remote add origin https://github.com/rafisyed4485/devops_sample_project.git)
+$ git push -u origin main			-> Push to Git
+$ ls -lrt					-> It will show all files with created date and time
+
+Authorization commands
+----------------------
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+
+
+
+
+
+
+
+
+
+
+
