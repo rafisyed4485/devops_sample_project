@@ -51,6 +51,9 @@ git revert commitId 				-> it will open the VI editor and if we save esc :wq! it
 git diff branchname					-> it will show the diffrence in branches
 git reset HEAD~1					-> it will revert one step back( check after commit)
 git cherry-pick commitId			-> it will navigate to that particular commit and pull the data, if we want make changes on particular commit id we can use this command
+Git cherry-pic
+Apply the changes introduced by some existing commit:
+$ git cherry-pick
 
 
 
