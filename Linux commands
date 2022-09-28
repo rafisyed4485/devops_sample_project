@@ -1,22 +1,62 @@
-$ pwd						-> It will show current working directory(/c/Users/RAFI/Desktop/Devops)
-$ git init					-> Initialized empty Git repository in C:/Users/RAFI/Desktop/Devops/.git/
-ll						-> Show List
+$ pwd								-> It will show current working directory(/c/Users/RAFI/Desktop/Devops)
+$ git init							-> Initialized empty Git repository in C:/Users/RAFI/Desktop/Devops/.git/
+ll									-> Show List
 touch Filename.extension			-> to create a File
 cat> FileName.extension 			-> to write code in the file
-$ cat Demo.java					-> To read data in the file
-$ git status					-> to check the uncomitted file in local repository
-$ git Add Filename.extension			-> Select a file to push into central repository
+$ cat Demo.java						-> To read data in the file
+$ git status						-> to check the uncomitted file in local repository
+$ git Add Filename.extension		-> Select a file to push into central repository
 $ git commit -m "Message"			-> To commit the files
-git remote add origin (path)			-> branch or origin selection (EX: $ git remote add origin https://github.com/rafisyed4485/devops_sample_project.git)
+git remote add origin (path)		-> branch or origin selection (EX: $ git remote add origin https://github.com/rafisyed4485/devops_sample_project.git)
 $ git push -u origin main			-> Push to Git
-$ ls -lrt					-> It will show all files with created date and time
+$ ls -lrt							-> It will show all files with created date and time
 $ rm -rf FileName.extension			-> Forceful remove file
 $ vi Filename.extension				-> to edit the file
-$ insert  means  I				-> insert editor
-$ :wq!						-> Save and close the VI editor
-$ :q 						-> close the file without modifications
+$ insert  means  I					-> insert editor
+$ :wq!								-> Save and close the VI editor
+$ :q 								-> close the file without modifications
 
 Authorization commands
 ----------------------
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
+
+Branching strategy
+$ git branch						->To know the current branch along with list of branches$
+$git branch branchname				-> Create a branch
+$ git checkout devops				-> To switch other branch
+$ git fetch origin test				-> It will check weather is there any changes in Branch if changes are there it will display ($ git fetch origin test)
+$ git pull origin test				-> It will pull the changes, and if you try to read file now changes also included cat test.txt
+
+Note: Create pull request to merge code from test to main branch, after merging we need to raise pull request to get the files in local repository
+
+Question?
+How can we say build is ready for deployment?
+By using git tag
+git tag tagname						-> it create a tag under that branch (Included the files which are ready for deployment
+Ex: git tag release_1.0				
+$ git push origin release_1.0		-> to push the into branch
+
+
+ADVANCED Commands in Git
+git checkout -b branchname			-> it will create branch and switched to the branch 
+git log								-> it will show completed activities
+git show							-> to check the meaning of commit
+
+
+git statsh							-> To pause the operation in current branch while moving to other branch (first we need to do git add command next we need to do statsh
+git statsh pop						-> to retirve hidden file in old branch
+
+git revert commitId 				-> it will open the VI editor and if we save esc :wq! it will delete the file (check files ll)
+git diff branchname					-> it will show the diffrence in branches
+git reset HEAD~1					-> it will revert one step back( check after commit)
+git cherry-pick commitId			-> it will navigate to that particular commit and pull the data, if we want make changes on particular commit id we can use this command
+
+
+
+
+
+
+
+
+
